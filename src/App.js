@@ -7,6 +7,7 @@ function App() {
     <Header>Cápák</Header>
     <Main>
       <h1>Cápák és ráják</h1>
+      <Capak />
     </Main>
     <Footer>
     &copy; Cápák és Ráják alapítvány
@@ -18,15 +19,15 @@ function App() {
 export default App;
 
 const Header = styled.header`
-    height: 58px;
-    background-color: rgb(20, 71, 92);
+    height: 70px;
+    background-color: rgb(55, 50, 209);
     color: white;
     font-size: 30px;
-    padding: 15px;
+    padding: 20px;
 `
 const Footer = styled.footer`
     height: 58px;
-    background-color: rgb(20, 71, 92);
+    background-color: rgb(55, 50, 209);
     color: white;
     font-size: 18px;
     padding: 15px;

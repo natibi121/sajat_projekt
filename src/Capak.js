@@ -1,26 +1,26 @@
 import styled from "styled-components"
-import { useQuerySubscription } from "react-datocms";
+//import { useQuerySubscription } from "react-datocms";
 
 const Capak = () => {
-    const {data} = useQuerySubscription({
-        enabled: true,
-        query:`
-        {
-            allCapak {
-                faj
-                capanev{
-                    name
-                    alfaj
-                    photo{
-                        url
-                    }
-                }
-            }
-        }
-        `,
-        token: 'YOUR-API-TOKEN',
-    });
-    const capak = data?.allCapak
+    //const {data} = useQuerySubscription({
+    //    enabled: true,
+    //    query:`
+    //    {
+    //        allCapak {
+    //            faj
+    //            capanev{
+    //                name
+    //                alfaj
+    //                photo{
+    //                    url
+    //                }
+    //            }
+    //        }
+    //    }
+    //    `,
+    //    token: 'YOUR-API-TOKEN',
+    //});
+    //const capak = data?.allCapak
     return(
         <>
         {capak ?
@@ -46,17 +46,18 @@ const Capa = (props) => {
     )
 }
 const Capanevek = styled.div`
-    font-size: 14px;
+    font-size: 25px;
     font-weight: 400px;
     color: rgb(150, 150, 150);
     img {
-        width: 80px;
-        border-radius: 50%;
+        width: 120px;
+        border-radius: 80%;
         padding-top: 10px;
     }
 `
 const Keret = styled.div`
     padding: 15px;
+    border-bottom: solid 1px black;
 `
 const Title = styled.div`
     font-size: 18px;
@@ -70,7 +71,7 @@ const capak = [
         capanev: {
             alfaj: "Kékcápa",
             photo: {
-                url: ""
+                url: "./szirticapa.jpg"
             },
             name: 'Feketeúszójú szirticápa',
         }
@@ -80,7 +81,7 @@ const capak = [
         capanev: {
             alfaj: "Heringcápa",
             photo: {
-                url: ""
+                url: "./fehercapa.jpg"
             },
             name: 'Fehér cápa',
         }
@@ -90,9 +91,19 @@ const capak = [
         capanev: {
             alfaj: "Porcos hal",
             photo: {
-                url: ""
+                url: "./tovisesraja.jpg"
             },
             name: 'Tövises rája',
+        }
+    },
+    {
+        faj: "Rája",
+        capanev: {
+            alfaj: "Porcos hal",
+            photo: {
+                url: "./ordograja.jpg"
+            },
+            name: 'Atlanti ördögrája',
         }
     }
 ]
