@@ -6,7 +6,7 @@ function App() {
     <>
     <Header>Cápák</Header>
     <Main>
-      <h1>Cápák és ráják</h1>
+      <H1>Cápák és ráják</H1>
       <Capak />
     </Main>
     <Footer>
@@ -33,8 +33,12 @@ const Footer = styled.footer`
     padding: 15px;
 `
 const Main = styled.main`
-    padding: 15px;
+    padding: 25px;
     background-color: rgb(214, 244, 245);
     height: calc(100vh - 58px - 58px);
     overflow: auto;
+`
+const H1 = styled.h1`
+    text-align: center;
+    font-size: 50px;
 `
