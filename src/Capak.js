@@ -2,25 +2,6 @@ import styled from "styled-components"
 //import { useQuerySubscription } from "react-datocms";
 
 const Capak = () => {
-    //const {data} = useQuerySubscription({
-    //    enabled: true,
-    //    query:`
-    //    {
-    //        allCapak {
-    //            faj
-    //            capanev{
-    //                name
-    //                alfaj
-    //                photo{
-    //                    url
-    //                }
-    //            }
-    //        }
-    //    }
-    //    `,
-    //    token: 'YOUR-API-TOKEN',
-    //});
-    //const capak = data?.allCapak
     return(
         <>
         {capak ?
